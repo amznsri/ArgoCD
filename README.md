@@ -14,6 +14,12 @@ kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.pas
 
 # you can change and delete init password
 
+# Trigger CD pipeline
+git status
+git add .
+git commit
+git push
+
 ```
 </br>
 
