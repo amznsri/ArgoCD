@@ -3,13 +3,12 @@ kind: Application
 metadata:
   name: myapp-argo-application
   namespace: argocd
-  annotations:
-    notifications.argoproj.io/subscribe.on-sync-succeeded.slack: build
+  
 spec:
   project: default
 
   source:
-    repoURL: https://gitlab.com/ankurgitlab1/argocd-app-demo.git
+    repoURL: https://github.com/amznsri/ArgoCD.git
     targetRevision: HEAD
     path: dev
   destination: 
